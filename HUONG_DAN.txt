@@ -1,0 +1,19 @@
+ĐẬU ĐẬU'S — WEBSITE QUẢN LÝ BÁO CÁO
+
+Trong gói này:
+- index.html: website giao diện hồng pastel/trắng, có đăng ký, đăng nhập, tổng quan báo cáo, tìm kiếm/lọc, tải tệp lên và tải xuống.
+- setup_supabase.sql: câu lệnh tạo bảng reports, bucket report-assets và các chính sách RLS.
+
+CÁCH DÙNG
+1. Giải nén file ZIP.
+2. Mở Supabase > SQL Editor > New query.
+3. Mở setup_supabase.sql bằng Notepad, sao chép toàn bộ nội dung và dán vào SQL Editor, sau đó bấm Run.
+   (Đây là file SQL duy nhất được dán vào SQL Editor; không dán index.html vào đó.)
+4. Trên máy tính, nhấp đúp index.html để mở website trong trình duyệt.
+5. Tạo tài khoản bằng email và mật khẩu. Nếu Supabase yêu cầu xác nhận email, mở email để xác nhận trước khi đăng nhập.
+
+LƯU Ý
+- Website đã được điền Supabase URL và Publishable Key mà bạn cung cấp.
+- Gói này không cần Node.js vì dùng HTML/CSS/JavaScript thuần.
+- Nếu trình duyệt báo lỗi kết nối hoặc đăng nhập, kiểm tra Supabase Authentication và cấu hình xác nhận email.
+- Không đưa secret key/service_role key vào mã website.
